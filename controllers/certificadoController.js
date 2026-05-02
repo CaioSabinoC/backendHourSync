@@ -1,5 +1,7 @@
 const Certificado = require('../models/Certificado');
 const Usuario = require('../models/Usuario');
+const { enviarEmailCertificado } = require('../services/emailService');
+const Usuario = require('../models/Usuario');
 const Curso = require('../models/Curso');
 const Categoria = require('../models/Categoria');
 
@@ -107,6 +109,18 @@ const certificadoController = {
           certificado.alunoId,
           { $inc: { horasCursadas: horas } }
         );
+      }
+      
+      const aluno = await Usuario.findById(certificado.alunoId);
+      if (aluno?.email) {
+        await enviarEmailCertificado({
+          para: aluno.email,
+          nomeAluno: aluno.nome,
+          tituloCertificado: certificado.titulo,
+          status,
+          justificativa,
+          horasAprovadas: horasAprovadas || certificado.horas || 0
+        });
       }
 
       res.json(certificado);
