@@ -1,4 +1,4 @@
-# 🎓 HourSync — Backend
+# HourSync — Backend
 
 > Sistema de Gestão de Atividades Complementares da Faculdade Senac Pernambuco
 
@@ -10,7 +10,7 @@
 
 ---
 
-## 📋 Sobre o Projeto
+## Sobre o Projeto
 
 O **HourSync** é uma plataforma web desenvolvida como Projeto Integrador do curso de Análise e Desenvolvimento de Sistemas (3° período) da Faculdade Senac Pernambuco. O sistema digitaliza e automatiza o processo de gestão de atividades complementares, permitindo que alunos submetam certificados, coordenadores validem as horas e o administrador acompanhe as métricas em tempo real.
 
@@ -20,7 +20,7 @@ Antes do HourSync, o controle de horas complementares era feito manualmente, ger
 ---
 
 
-## 🛠️ Stack Tecnológica
+## Stack Tecnológica
 
 | Tecnologia | Versão | Função |
 |---|---|---|
@@ -37,7 +37,7 @@ Antes do HourSync, o controle de horas complementares era feito manualmente, ger
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 backendHourSync/
@@ -70,7 +70,7 @@ backendHourSync/
 
 ---
 
-## 🔐 Autenticação e Perfis
+## Autenticação e Perfis
 
 O sistema usa **JWT (JSON Web Token)** para autenticação. Ao fazer login, o backend retorna um token que deve ser enviado no cabeçalho de todas as requisições protegidas:
 
@@ -88,7 +88,7 @@ Authorization: Bearer SEU_TOKEN_AQUI
 
 ---
 
-## 🗄️ Modelo de Dados
+## Modelo de Dados
 
 ### Usuario
 ```javascript
@@ -127,7 +127,7 @@ Authorization: Bearer SEU_TOKEN_AQUI
 
 ---
 
-## 📡 Endpoints da API
+## Endpoints da API
 
 ### Autenticação
 | Método | Rota | Descrição | Token |
@@ -184,7 +184,7 @@ Authorization: Bearer SEU_TOKEN_AQUI
 
 ---
 
-## ⚙️ Como Rodar Localmente
+## Como Rodar Localmente
 
 ### Pré-requisitos
 - [Node.js](https://nodejs.org) 18+
@@ -235,7 +235,7 @@ Deve retornar:
 
 ---
 
-## ☁️ Deploy no Render
+## Deploy no Render
 
 ### 1. Suba o código no GitHub
 ```bash
@@ -264,7 +264,7 @@ git push -u origin main
 
 ---
 
-## 👤 Criar o Usuário Admin
+## Criar o Usuário Admin
 
 Após o deploy, crie o usuário administrador via Postman ou qualquer cliente HTTP:
 
@@ -283,7 +283,7 @@ Após o deploy, crie o usuário administrador via Postman ou qualquer cliente HT
 
 ---
 
-## 📦 Exemplo de Uso
+## Exemplo de Uso
 
 ### Login
 ```bash
@@ -338,7 +338,7 @@ Authorization: Bearer SEU_TOKEN
 
 ---
 
-## 👥 Equipe
+## Equipe
 
 | Nome |
 |---|
@@ -355,6 +355,6 @@ Authorization: Bearer SEU_TOKEN
 
 ---
 
-## 📄 Licença
+## Licença
 
 Este projeto foi desenvolvido para fins acadêmicos como Projeto Integrador da Faculdade Senac Pernambuco.
