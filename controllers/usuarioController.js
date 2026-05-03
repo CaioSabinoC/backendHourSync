@@ -204,9 +204,14 @@ const usuarioController = {
     res.json({
       usuario: {
         id: usuario._id,
+        _id: usuario._id,
         nome: usuario.nome,
         email: usuario.email,
-        role: usuario.role
+        role: usuario.role,
+        fotoUrl: usuario.fotoUrl || null,
+        matricula: usuario.matricula || null,
+        faculdade: usuario.faculdade || null,
+        telefone: usuario.telefone || null
       },
       token
     });
