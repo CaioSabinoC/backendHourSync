@@ -192,7 +192,7 @@ const usuarioController = {
           matricula: usuario.matricula || null,
           faculdade: usuario.faculdade || null,
           telefone: usuario.telefone || null,
-          cursoId: usuario.cursoId || []  // ← adicionado
+          cursoId: usuario.cursoId || []
         },
         token
       });
